@@ -41,11 +41,11 @@ if "admin_access" not in st.session_state:
 
 # Sample data for testing
 if not st.session_state["bookings"]:
-    st.session_state["bookings"] = [{"Booking ID": 1, "Guest": "John Doe", "Room Type": "Deluxe", "Check-in": "2025-07-16", "Check-out": "2025-07-18", "Status": "Pending"}]
+    st.session_state["bookings"] = [{"Booking ID": 1, "Guest": "KARAN", "Room Type": "Deluxe", "Check-in": "2025-07-16", "Check-out": "2025-07-18", "Status": "Pending"}]
 if not st.session_state["spa_bookings"]:
-    st.session_state["spa_bookings"] = [{"Spa Booking ID": 1, "Guest": "Alice Smith", "Therapy Type": "Swedish Massage", "Date": "2025-07-17", "Time": "10:00 AM", "Status": "Pending"}]
+    st.session_state["spa_bookings"] = [{"Spa Booking ID": 1, "Guest": "ADITI", "Therapy Type": "Swedish Massage", "Date": "2025-07-17", "Time": "10:00 AM", "Status": "Pending"}]
 if not st.session_state["dining_bookings"]:
-    st.session_state["dining_bookings"] = [{"Dining Booking ID": 1, "Guest": "Bob Lee", "Meal Type": "Dinner", "Date": "2025-07-18", "Time": "7:00 PM", "Status": "Pending"}]
+    st.session_state["dining_bookings"] = [{"Dining Booking ID": 1, "Guest": "SUNNY", "Meal Type": "Dinner", "Date": "2025-07-18", "Time": "7:00 PM", "Status": "Pending"}]
 if not st.session_state["feedback"]:
     st.session_state["feedback"] = [{"Booking ID": 1, "Feedback": "👍", "Date": "2025-07-16"}]
 
@@ -170,7 +170,7 @@ with st.sidebar:
 
 
     # QR Code for easy mobile access
-    deployed_url = "https://your-streamlit-app-url.streamlit.app"  # <-- Replace with your real deployed URL
+    deployed_url = "https://your-streamlit-app-url.streamlit.app" 
     st.markdown("### 📱 Scan to open HOSPI on your device:")
     st.markdown(generate_qr_code(deployed_url), unsafe_allow_html=True)
 
