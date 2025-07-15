@@ -84,8 +84,7 @@ Admin Dashboard Features:
 Analytics: Shows counts for room bookings, spa bookings, dining bookings, and feedback.
 
 Demo Video
-https://www.canva.com/design/DAGtQFQU9T8/IqH7D6gHujIPA1brkMPGtA/edit?utm_content=DAGtQFQU9T8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-
+https://drive.google.com/file/d/19KIAzqGvo6_tX4Wyeac9URQGLrrfcAZu/view?usp=sharing
 Watch HOSPI in Action!
 
 Future Enhancements
