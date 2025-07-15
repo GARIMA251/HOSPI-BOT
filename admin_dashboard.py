@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # Load the .env file
 load_dotenv()
 
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "default_password")  # Fetch from env, use default if not set
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")  
 
 # Initialize session state variables if not present
 if "admin_access" not in st.session_state:
@@ -42,11 +42,11 @@ if st.session_state["admin_access"]:
         st.title("Admin Dashboard")
         st.markdown("Here you can manage bookings, monitor feedback, and view analytics.")
 
-        # Sample Data (You can replace this with actual dynamic data from your app)
+        # Sample Data 
         booking_data = [
-            {"Booking ID": 1, "Guest": "John Doe", "Room Type": "Deluxe", "Check-in": "2025-07-16", "Check-out": "2025-07-18", "Status": "Confirmed"},
-            {"Booking ID": 2, "Guest": "Alice Smith", "Room Type": "Budget", "Check-in": "2025-07-17", "Check-out": "2025-07-20", "Status": "Pending"},
-            {"Booking ID": 3, "Guest": "Bob Lee", "Room Type": "Suite", "Check-in": "2025-07-18", "Check-out": "2025-07-22", "Status": "Confirmed"},
+            {"Booking ID": 1, "Guest": "KARAN", "Room Type": "Deluxe", "Check-in": "2025-07-16", "Check-out": "2025-07-18", "Status": "Confirmed"},
+            {"Booking ID": 2, "Guest": "ADITI", "Room Type": "Budget", "Check-in": "2025-07-17", "Check-out": "2025-07-20", "Status": "Pending"},
+            {"Booking ID": 3, "Guest": "SUNNY", "Room Type": "Suite", "Check-in": "2025-07-18", "Check-out": "2025-07-22", "Status": "Confirmed"},
         ]
 
         feedback_data = [
@@ -76,4 +76,4 @@ else:
     # If admin access isn't granted, show the assistant page
     if st.session_state["page"] == "assistant":
         st.markdown("Please log in to access the **Admin Dashboard**.")
-        # Further assistant logic can be added here
+  
