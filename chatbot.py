@@ -284,8 +284,6 @@ def get_response(user_input):
     try:
         # Track the time taken to call the API
         start_time = time.time()
-
-        # Only initiate the spinner when the response is being generated
         st.session_state["latest_query"] = user_input
         is_hindi_query = is_hindi(user_input)
         language_note = "Please respond in Hindi or Hinglish politely." if is_hindi_query else "Respond in English politely."
@@ -310,11 +308,10 @@ def get_response(user_input):
             "Respond only to hotel-related topics. If unclear, ask clarifying questions. No small talk."
         )
 
-        # Show the spinner only once while waiting for the API response
         with st.spinner("HOSPI is preparing your response..."):
             # Call Gemini model to generate content
             gemini_model = genai.GenerativeModel("gemini-1.5-flash")
-            response = gemini_model.generate_content(prompt)  # Removed timeout argument
+            response = gemini_model.generate_content(prompt) 
 
         # Process response
         if hasattr(response, "parts") and response.parts:
@@ -326,9 +323,7 @@ def get_response(user_input):
         if not reply:
             raise ValueError("Gemini returned an empty string.")
 
-        # Log the time taken for the API call (internally, not visible to the user)
         elapsed_time = time.time() - start_time
-        # Optional: You can log this time internally for performance tracking
 
         # Return the reply from Gemini
         st.session_state["last_fallback"] = False
