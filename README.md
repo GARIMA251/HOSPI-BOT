@@ -97,3 +97,8 @@ If we had more time, we would pursue the following enhancements:
 - Multi-language Support: Expand support to more international languages.
 - Advanced Context Management: Enhance the bot's ability to handle complex conversations.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
