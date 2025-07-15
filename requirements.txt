@@ -1,7 +1,8 @@
-streamlit
-google-generativeai
-speechrecognition
-pyttsx3
-pyaudio==0.2.14
-qrcode
-python-dotenv
+streamlit                     # For building the interactive web app
+google-generativeai            # For integrating with Google's Gemini AI model
+speechrecognition              # For speech-to-text functionality
+pyttsx3                        # For text-to-speech functionality
+pyaudio==0.2.14                # Required for microphone access with speech recognition
+qrcode                         # For generating QR codes
+python-dotenv                  # For securely loading environment variables from .env file
+pandas                         # For data manipulation and working with dataframes (if needed)
