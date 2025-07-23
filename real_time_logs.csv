@@ -1,0 +1,4 @@
+timestamp,request_type,details,hotel_name
+2025-07-23 17:11:16,Room Booking,"Room Type: Presidential Suite, Check-in: 2025-07-23, Check-out: 2025-07-23, Hotel: Radisson Blu",
+2025-07-23 21:14:21,Room Booking,"Room Type: Deluxe Room, Check-in: 2025-07-23, Check-out: 2025-07-25, Hotel: Radisson Blu",Radisson Blu
+2025-07-23 21:16:21,Spa Appointment,"Spa Service: Facial, Time: 01:30:00, Hotel: Taj Palace",Taj Palace
