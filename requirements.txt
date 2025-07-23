@@ -1,0 +1,7 @@
+streamlit
+google-generativeai
+speechrecognition
+pyttsx3
+pyaudio==0.2.14
+qrcode
+python-dotenv
