@@ -76,7 +76,7 @@ The Admin Dashboard in HOSPI is designed for hotel administrators to monitor boo
 - **Real-time Booking Logs**: Every booking made by a guest (room, food, spa) is logged into the system and displayed on the Admin Dashboard. Admins can view details of these bookings in real-time and track analytics for room, spa, and dining services.
 
 ## Demo Video
-[Watch HOSPI in Action!] https://drive.google.com/drive/u/2/search?q=hospi 
+[Watch HOSPI in Action!] https://drive.google.com/file/d/1wkQhN2bTyMVOBnUetQiQ-ohIvPt3q1eU/view?usp=sharing 
 
 ## Future Enhancements:
 If we had more time, we would pursue the following enhancements:
