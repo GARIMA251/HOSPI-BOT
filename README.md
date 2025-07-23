@@ -7,9 +7,9 @@ The user can now **select a particular hotel**, and the chatbot will provide ass
 
 ## Key Features:
 HOSPI offers a diverse array of services tailored to guest needs:
-- 🛏️ **Room Bookings**: Facilitates booking various room types (Deluxe, Budget, Suite) based on city, dates, and number of guests.
+- 🛏️ **Room Bookings**: Facilitates booking various room types (Deluxe, Budget, Suite) based on hotel, city, dates, and number of guests.
 - 🍽️ **Food Menus**: Provides detailed menus for North Indian, Continental, and South Indian cuisines, with full-day options.
-- 💆 **Spa Services**: Informs about spa timings and available therapies (Swedish, Deep Tissue, Ayurvedic), and assists with booking.
+- 💆 **Spa Services**: Informs about spa timings and assists with booking.
 - 🧺 **Laundry Services**: Arranges laundry pickup.
 - 🚕 **Taxi & Cab Bookings**: Helps in booking taxis for airport transfers or local sightseeing.
 - ⏰ **Wake-up Calls**: Schedules wake-up calls.
@@ -34,13 +34,21 @@ HOSPI offers a diverse array of services tailored to guest needs:
 
 ## App Structure:
 ### Files Overview:
-- **app.py**: Main Streamlit application that handles user interface and service interactions. **New Update**: Users are now able to **select a particular hotel** from a dropdown menu, and HOSPI will provide assistance specific to that hotel.
-- **chatbot.py**: Contains the main logic for handling conversational AI, integrates with the Google Gemini API, and manages user queries.
-- **requirements.txt**: Lists all required Python libraries for the project.
-- **Hotel_Logo.png**: Logo used within the application interface.
-- **.env**: Contains sensitive configuration information like the API key (not to be shared).
-- **.gitignore**: Specifies files/directories to ignore in git, such as the .env file.
-- **admin_dashboard.py**: Allows hotel administrators to manage and update room bookings, dining bookings, spa services, and user feedback. Requires admin authentication via a password to access.
+
+- **`app.py`**: The main Streamlit application that handles the user interface and service interactions.
+   **Key Feature**: Allows users to **select a particular hotel** from a dropdown menu. Once a hotel is selected, HOSPI responds based on hotel-specific information.
+- **`chatbot.py`**: Contains the main logic for handling conversational AI. Integrates with the **Google Gemini API** for real-time responses based on the hotel's offerings.
+   **Key Feature**: Processes user queries and generates responses dynamically based on the selected hotel.
+- **`requirements.txt`**: Lists all the required Python libraries for the project (e.g., `streamlit`, `google-generativeai`, etc.).
+- **`Hotel_Logo.png`**: The logo image displayed in the hotel assistant interface.
+- **`hotel_data.py`**: Stores information about various hotels, such as their **description**, **location**, **room types**, **facilities**, **menu**, and **services**. This file is essential for the chatbot to provide tailored responses for different hotels.
+   **Key Feature**: Allows for easy management of hotel data, enabling HOSPI to respond accurately to hotel-specific queries.
+- **`.env`**: Stores sensitive configuration data such as API keys.
+- **`.gitignore`**: Specifies files and directories to be ignored by Git (e.g., `.env`, temporary files).
+- **`admin_dashboard.py`**: Provides an **admin interface** for managing room bookings, dining bookings, spa services, and user feedback.
+   **Key Features**: Requires **admin authentication** to access and manage hotel services.
+- **`How to Run HOSPI Locally.md`**: Contains step-by-step instructions for setting up and running HOSPI on your local machine.
+- **`real_time_logs.csv`**: Stores logs of user interactions and system processes, which can help with debugging or monitoring system performance.
 
 ## Admin Dashboard Access:
 ### Overview:
@@ -68,7 +76,7 @@ The Admin Dashboard in HOSPI is designed for hotel administrators to monitor boo
 - **Real-time Booking Logs**: Every booking made by a guest (room, food, spa) is logged into the system and displayed on the Admin Dashboard. Admins can view details of these bookings in real-time and track analytics for room, spa, and dining services.
 
 ## Demo Video
-[Watch HOSPI in Action!]
+[Watch HOSPI in Action!] https://drive.google.com/drive/u/2/search?q=hospi 
 
 ## Future Enhancements:
 If we had more time, we would pursue the following enhancements:
@@ -79,4 +87,4 @@ If we had more time, we would pursue the following enhancements:
 - **Advanced Context Management**: Enhance the bot's ability to handle complex conversations.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
